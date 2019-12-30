@@ -19,11 +19,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_native_splash:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   
+flutter_native_splash:
+  image: assets/images/splash.png
+  color: "ffffff"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
