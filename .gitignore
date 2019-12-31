@@ -40,3 +40,10 @@ lib/generated_plugin_registrant.dart
 
 # build files 
 /ios/Build/
+# mock data with potentially identifying info 
+lib/util/mocks.dart
+# generated files 
+*.g.dart
+# don't add project credentials to version control
+ios/Runner/GoogleService-Info.plist
+android/app/google-services.json

@@ -1,16 +1,44 @@
 # silicon_beach_member
 
-A new Flutter project.
+A Flutter app to assist Silicon Beach members co-working.
 
-## Getting Started
+## Redux RemoteDevTools (RDT) 
 
-This project is a starting point for a Flutter application.
+- find the IP address of the computer 
+- use one of the strings in `utilities/mock.dart` or make a new one 
+- edit `main.dart` to use the correct IP 
+- run the remotedev server
 
-A few resources to get you started if this is your first Flutter project:
+```
+remotedev --port 8000
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- open a web page with url:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+http://localhost:8000/
+```
+
+## Code gen with built_value 
+
+After making changes to built_value classes run the builder to generate the new code:
+
+```
+flutter pub run build_runner build
+```
+
+## Tests 
+
+### Unit and Widget Tests 
+
+```
+flutter test
+```
+
+### Integration Tests 
+
+In VSCode set the device to an emulator then run: 
+
+```
+flutter drive --target=test_driver/app.dart
+```
